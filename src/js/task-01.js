@@ -1,9 +1,9 @@
-const itemsEl = document.querySelectorAll(".item"); // Ищем класс .item
-console.log(`Number of categories: ${itemsEl.length}`); // Возвращаем сообщение
+const listEl = document.querySelectorAll(".item");
+console.log(`Number of categories: ${listEl.length}`);
 
-itemsEl.forEach((element) => {
+listEl.forEach((element) => {
   const titleEl = element.querySelector("h2");
-  console.log(`Category: ${titleEl.textContent}`); // Возвращаем сообщение
+  console.log(`Category: ${titleEl.textContent}`);
   const listLengthEl = element.querySelectorAll("li");
-  console.log(`Elements: ${listLengthEl.length}`); // Возвращаем сообщение
+  console.log(`Elements: ${listLengthEl.length}`);
 });
